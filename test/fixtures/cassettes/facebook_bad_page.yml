@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.facebook.com/666?access_token=109898403861%7CDGdiK3tay_jZnHKYPqPBeU2fkRA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Content-Type:
+      - text/javascript; charset=UTF-8
+      Etag:
+      - ! '"bb9c337e92fdf93dfe26b3b7cc6607f84c7c7bdd"'
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Pragma:
+      - no-cache
+      X-Fb-Rev:
+      - '571030'
+      X-Fb-Debug:
+      - 9xOvWyK5Zlz5aY0b+UjhkkFIPGz+3Yru5d1b8yMM3X8=
+      Date:
+      - Sun, 10 Jun 2012 19:13:20 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '124'
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"666","name":"Xi Wang","first_name":"Xi","last_name":"Wang","username":"xiwang427","gender":"female","locale":"en_US"}'
+    http_version: 
+  recorded_at: Sun, 10 Jun 2012 19:13:20 GMT
+recorded_with: VCR 2.1.0
