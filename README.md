@@ -34,6 +34,17 @@ Facebook page's description!
 For more information on the many properties available to you, check out
 the API documentation.
 
+## Background
+
+This project is the result of the work I've done on my band's website,
+[TheWonderBars.com](http://thewonderbars.com). I didn't want to have to
+maintain two versions of press data, and since we had an active Facebook
+page that was chock full of content well before the site was designed and 
+deployed, I considered using Facebook as our main "database", rather
+than a locally-maintained SQL database of some kind. At this point in
+time, TheWonderBars.com does not require a database in order to
+function.
+
 ## Contributing
 
 All contributions will be examined and considered. Anyone can feel free
