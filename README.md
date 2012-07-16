@@ -3,7 +3,7 @@
 BlueVelvet is a content management system that uses the Facebook
 platform as the data store. It allows you to map route actions to
 Facebook API calls and display the results with partials in your other
-pages. You can even subclass the controller and create your own actions,
+ages. You can even subclass the controller and create your own actions,
 using one or more of your Facebook page's plethora of properties.
 
 [![Build Status](https://secure.travis-ci.org/tubbo/blue_velvet.png?branch=master)](http://travis-ci.org/tubbo/blue_velvet)
@@ -38,8 +38,9 @@ the API documentation.
 ## Configuration
 
 All configuration is taken care of in a file called
-`config/facebook.yml`. This is also the file used by Koala, the gem that
-is actually communicating with the Facebook Graph API, so if you're used
+`config/facebook.yml`. This is also the file used by 
+[Koala](https://github.com/arsduo/koala), the gem that is actually 
+communicating with the Facebook Graph API, so if you're used
 to working with that configuration this should be easy for you.
 
 In order to use blue_velvet, you must create a Facebook app on
