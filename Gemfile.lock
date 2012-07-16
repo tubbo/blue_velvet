@@ -3,7 +3,7 @@ PATH
   specs:
     blue_velvet (0.0.1)
       koala
-      rails (~> 3.2.6)
+      rails (~> 3.2)
 
 GEM
   remote: http://rubygems.org/
