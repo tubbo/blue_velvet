@@ -9,7 +9,7 @@ class Facebook::ConfigurationTest < ActiveSupport::TestCase
          end
 
     test "have #{an} #{attribute}" do
-      %w(equal nil empty).each { |question|
+      %w(equal nil blank).each { |question|
         if question == 'equal'
           refute_equal "", setting
         else

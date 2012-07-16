@@ -27,3 +27,8 @@ VCR.configure do |c|
   # c.allow_http_connections_when_no_cassette = true
 end
 
+class ActiveSupport::TestCase
+  def refute_blank(attribute)
+    refute attribute.blank?, "#{attribute.class.name} is blank."
+  end
+end

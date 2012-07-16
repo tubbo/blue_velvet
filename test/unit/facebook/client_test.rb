@@ -12,7 +12,7 @@ class Facebook::ClientTest < ActiveSupport::TestCase
   end
 
   test "retrieve about text" do
-    assert_equal "Live, improvised dance music from Philadelphia", @facebook.about
+    assert_equal "Live, improvised, SOULFUL dance music", @facebook.about
   end
 
   test "have an access token" do
