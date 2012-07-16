@@ -23,9 +23,6 @@ end
 APP_RAKEFILE = File.expand_path("../test/dummy/Rakefile", __FILE__)
 load 'rails/tasks/engine.rake'
 
-# Custom tasks
-Dir["lib/tasks/*.rake"].each { |rake_file| load rake_file }
-
 Bundler::GemHelper.install_tasks
 
 require 'rake/testtask'
@@ -37,5 +34,9 @@ Rake::TestTask.new(:test) do |t|
   t.verbose = false
 end
 
+desc "Configure the dummy app with a dummy Facebook page."
+task :configuration do
+  cp "config/facebook.yml", "test/dummy/config/facebook.yml"
+end
 
 task :default => :test
