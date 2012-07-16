@@ -7,17 +7,19 @@ class Facebook::PageControllerTest < ActionController::TestCase
     end
   end
 
-  test "access the event listing" do
+  test "disallow access to attributes that don't exist" do
     VCR.use_cassette(:facebook_authentication) do
       get :events
       assert response.success?
+      assert_select '#error'
     end
   end
 
-  test "access the personnel profiles" do
+  test "allow access and render a found attribute" do
     VCR.use_cassette(:facebook_authentication) do
-      get :members
+      get :description
       assert response.success?
+      assert_select '#members'
     end
   end
 end

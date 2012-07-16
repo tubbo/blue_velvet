@@ -27,11 +27,11 @@ class Facebook::PageController < ApplicationController
   def action_missing attribute_name
     if facebook.has_attribute? attribute_name
       attribute_content = facebook.send(:"#{attribute_name}").gsub(/\n/, "<br>")
-      render partial: 'page_attribute', locals: {
+      attribute = Facebook::Attribute.new \
         name: attribute_name.parameterize,
         title: attribute_name.titleize,
         body: attribute_content
-      }
+      render partial: 'page_attribute', locals: { attribute: attribute }
     else
       render partial: 'attribute_not_found', locals: { attribute_name: "#{attribute_name}" }
     end
