@@ -8,4 +8,4 @@ namespace :ci do
 end
 
 desc "Build and test blue_velvet on the CI server."
-task :ci => ['build:configuration', 'db:migrate', 'test']
+task :ci => ['ci:configuration', 'db:migrate', 'test']
