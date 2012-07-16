@@ -1,1 +1,1 @@
-script: 'rake ci'
+script: 'rake ci:configuration db:migrate test'
