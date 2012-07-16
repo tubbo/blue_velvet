@@ -6,6 +6,8 @@ Facebook API calls and display the results with partials in your other
 pages. You can even subclass the controller and create your own actions,
 using one or more of your Facebook page's plethora of properties.
 
+[![Build Status](https://secure.travis-ci.org/tubbo/blue_velvet.png?branch=master)](http://travis-ci.org/tubbo/blue_velvet)
+
 ## Usage
 
 Add the gem to your Gemfile
