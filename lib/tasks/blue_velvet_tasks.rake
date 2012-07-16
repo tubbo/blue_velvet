@@ -1,4 +1,1 @@
-# desc "Explaining what the task does"
-# task :blue_velvet do
-#   # Task goes here
-# end
+# Put tasks here that should be called from within the Rails app.

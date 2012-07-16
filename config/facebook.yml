@@ -2,17 +2,17 @@
 # and it will be read by the Rails application. and BlueVelvet.
 
 development:
-  app_id:
-  secret_key:
-  page_id:
+  app_id: 149744351829141
+  secret_key: 0a8de678e00605bda2c583ea187d197e
+  page_id: 137797553025194
 
 test:
-  app_id:
-  secret_key:
-  page_id:
+  app_id: 149744351829141
+  secret_key: 0a8de678e00605bda2c583ea187d197e
+  page_id: 137797553025194
 
 production:
-  app_id:
-  secret_key:
-  page_id:
+  app_id: 149744351829141
+  secret_key: 0a8de678e00605bda2c583ea187d197e
+  page_id: 137797553025194
 

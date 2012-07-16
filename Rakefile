@@ -23,7 +23,8 @@ end
 APP_RAKEFILE = File.expand_path("../test/dummy/Rakefile", __FILE__)
 load 'rails/tasks/engine.rake'
 
-
+# Custom tasks
+Dir["lib/tasks/*.rake"].each { |rake_file| load rake_file }
 
 Bundler::GemHelper.install_tasks
 

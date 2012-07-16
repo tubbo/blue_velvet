@@ -17,7 +17,9 @@ Then rebundle
     $ bundle install
 
 Generate the Facebook configuration YAML file and edit it with your
-Facebook App details.
+Facebook App details. Obtain your Facebook page ID from the URL of your
+Facebook page, it's the number at the end, after the hyphenated name and
+a "/"..
 
     $ rails generate facebook:config
 
