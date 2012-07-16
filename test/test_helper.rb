@@ -18,6 +18,8 @@ if ActiveSupport::TestCase.method_defined?(:fixture_path=)
   ActiveSupport::TestCase.fixture_path = File.expand_path("../fixtures", __FILE__)
 end
 
+require 'vcr'
+
 # Configure HTTP mocking library
 VCR.configure do |c|
   c.cassette_library_dir = 'test/fixtures/cassettes'
