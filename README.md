@@ -26,6 +26,28 @@ in the "Configuration" section.
 
     $ rails generate facebook:config
 
+It should look something like this:
+
+```yaml
+# This is your Facebook configuration file. Put your Facebook app info in this file
+# and it will be read by the Rails application.
+
+development:
+  app_id:
+  secret_key:
+  page_id:
+
+test:
+  app_id:
+  secret_key:
+  page_id:
+
+production:
+  app_id:
+  secret_key:
+  page_id:
+```
+
 And finally, add the query to your `config/routes.rb`:
 
     get "/about" => "facebook/page#description"
