@@ -2,7 +2,7 @@
 class Facebook::Attribute
   attr_accessor :name, :title, :body
 
-  def initialize with_options
-    with_options.each { |key,val| self.send :"#{key}", val }
+  def initialize with_options={}
+    with_options.each { |key,val| self.send :"#{key}=", val }
   end
 end

@@ -19,7 +19,7 @@ class Facebook::PageControllerTest < ActionController::TestCase
     VCR.use_cassette(:facebook_authentication) do
       get :description
       assert response.success?
-      assert_select '#members'
+      assert_select '#description'
     end
   end
 end
