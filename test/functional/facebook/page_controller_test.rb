@@ -17,9 +17,9 @@ class Facebook::PageControllerTest < ActionController::TestCase
 
   test "allow access and render a found attribute" do
     VCR.use_cassette(:facebook_authentication) do
-      get :description
+      get :about
       assert response.success?
-      assert_select '#description'
+      assert_select '#about'
     end
   end
 end

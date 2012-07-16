@@ -1,0 +1,95 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://graph.facebook.com/oauth/access_token
+    body:
+      encoding: US-ASCII
+      string: client_id=149744351829141&client_secret=0a8de678e00605bda2c583ea187d197e&type=client_cred
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Pragma:
+      - no-cache
+      X-Fb-Rev:
+      - '591138'
+      X-Fb-Debug:
+      - 6PmvDHpYUSS61O/Z9H2TkGY8gWak9q3UocKuAAXBSCk=
+      Date:
+      - Mon, 16 Jul 2012 01:58:25 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '56'
+    body:
+      encoding: US-ASCII
+      string: access_token=149744351829141|2hvHZjGNTLToXtrdt0x5H-4OV58
+    http_version: 
+  recorded_at: Mon, 16 Jul 2012 01:58:25 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/137797553025194?access_token=149744351829141%7C2hvHZjGNTLToXtrdt0x5H-4OV58
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Content-Type:
+      - text/javascript; charset=UTF-8
+      Etag:
+      - ! '"e8ad69395d2afbf8a7472895a90535e579e87689"'
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Pragma:
+      - no-cache
+      X-Fb-Rev:
+      - '591138'
+      X-Fb-Debug:
+      - TiaF3QkK0AxCVCs5BFNI2PX0WVcW3K4M3bLmu43+oe0=
+      Date:
+      - Mon, 16 Jul 2012 01:58:26 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '585'
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"137797553025194","name":"The BlueVelvet Gem","picture":"http:\/\/profile.ak.fbcdn.net\/hprofile-ak-snc4\/592212_137797553025194_1664626203_s.jpg","link":"http:\/\/www.facebook.com\/pages\/The-BlueVelvet-Gem\/137797553025194","category":"Software","is_published":true,"website":"http:\/\/github.com\/tubbo\/blue_velvet
+        http:\/\/thewonderbars.com","about":"BlueVelvet is a Rails engine that uses
+        your Facebook page as a data store. Obtain all of your Facebook page''s information
+        through your Rails app and create electronic press kits with ease. Extracted
+        from TheWonderBars.com"}'
+    http_version: 
+  recorded_at: Mon, 16 Jul 2012 01:58:26 GMT
+recorded_with: VCR 2.2.3

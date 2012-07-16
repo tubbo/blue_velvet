@@ -8,11 +8,11 @@ class Facebook::ClientTest < ActiveSupport::TestCase
   }
 
   test "retrieve page name" do
-    assert_equal "The Wonder Bars", @facebook.name
+    assert_equal "The BlueVelvet Gem", @facebook.name
   end
 
   test "retrieve about text" do
-    assert_equal "Live, improvised, SOULFUL dance music", @facebook.about
+    assert_match "BlueVelvet is a Rails engine", @facebook.about
   end
 
   test "have an access token" do
