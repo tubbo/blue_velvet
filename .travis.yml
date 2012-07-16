@@ -1,3 +1,3 @@
-script: 'rake configure:from_blank test'
+script: 'rake configure test'
 rvm:
   - 1.9.3-p125
