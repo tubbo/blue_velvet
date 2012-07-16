@@ -10,6 +10,23 @@ using one or more of your Facebook page's plethora of properties.
 
 [![Build Status](https://secure.travis-ci.org/tubbo/blue_velvet.png?branch=master)](http://travis-ci.org/tubbo/blue_velvet)
 
+## In The Wild
+
+BlueVelvet can be observed "in the wild" on <http://thewonderbars.com>.
+I've also [open-sourced the
+codebase](https://github.com/tubbo/thewonderbars.com/tree/develop) to
+give an example as to how this gem could be/is being used.
+
+**NOTE:** At this time, I haven't deployed the site using blue_velvet to
+the server for <http://thewonderbars.com>. I've been very busy with work
+and setting up gigs for the band, so I haven't gotten around to getting
+all that up and running. In keeping with my philosophy of reserving the
+'master' branch for the working, released version of the code, the
+source tree using this gem is available in the 'develop' branch. Soon, I
+will merge this branch into master and BlueVelvet will deploy on
+<http://thewonderbars.com>. Until then, check out the source and if you
+don't believe me, download the app and run it yourself!
+
 ## Usage
 
 Add the gem to your Gemfile
