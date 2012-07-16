@@ -1,0 +1,3 @@
+script: 'rake test'
+rvm:
+  - 1.9.3-p125
