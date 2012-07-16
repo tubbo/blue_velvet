@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class BlueVelvetTest < ActiveSupport::TestCase
-  test "truth" do
+  test "the module exists" do
     assert_kind_of Module, BlueVelvet
   end
 end

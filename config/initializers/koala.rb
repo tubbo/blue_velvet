@@ -1,3 +1,5 @@
+require 'koala'
+
 module Facebook
   def self.config
     if Rails.env.staging?

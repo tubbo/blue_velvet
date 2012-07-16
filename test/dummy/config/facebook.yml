@@ -1,0 +1,18 @@
+# This is your Facebook configuration file. Put your Facebook app info in this file
+# and it will be read by the Rails application. and BlueVelvet.
+
+development:
+  app_id:
+  secret_key:
+  page_id:
+
+test:
+  app_id:
+  secret_key:
+  page_id:
+
+production:
+  app_id:
+  secret_key:
+  page_id:
+

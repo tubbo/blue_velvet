@@ -15,9 +15,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: dummy_development
+  database: blue_velvet_development
   pool: 5
-  username: dummy
+  username: blue_velvet
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -41,15 +41,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: dummy_test
+  database: blue_velvet_test
   pool: 5
-  username: dummy
+  username: blue_velvet
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: dummy_production
+  database: blue_velvet_production
   pool: 5
-  username: dummy
+  username: blue_velvet
   password:
