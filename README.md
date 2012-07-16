@@ -19,9 +19,8 @@ Then rebundle
     $ bundle install
 
 Generate the Facebook configuration YAML file and edit it with your
-Facebook App details. Obtain your Facebook page ID from the URL of your
-Facebook page, it's the number at the end, after the hyphenated name and
-a "/"..
+Facebook App details. If you don't know how to do that, look below
+in the "Configuration" section.
 
     $ rails generate facebook:config
 
@@ -35,6 +34,24 @@ Facebook page's description!
 
 For more information on the many properties available to you, check out
 the API documentation.
+
+## Configuration
+
+All configuration is taken care of in a file called
+`config/facebook.yml`. This is also the file used by Koala, the gem that
+is actually communicating with the Facebook Graph API, so if you're used
+to working with that configuration this should be easy for you.
+
+In order to use blue_velvet, you must create a Facebook app on
+<https://developers.facebook.com>. Once you do that, obtain the
+following information from the new app page on the control panel:
+
+- App ID/API Key
+- App Secret
+- Your Facebook page ID, which can be obtained by visiting your Facebook page and observing the number at the very end of the address bar, right after the "/".
+
+Add that information into your YAML config, and you can begin using
+blue_velvet in your application.
 
 ## Background
 
@@ -79,3 +96,10 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Extended Documentation
+
+- [Facebook API documentation](https://developers.facebook.com)
+- [Facebook Apps Control Panel](https://developers.facebook.com/apps)
+- [RDoc code documentation](http://rdoc.info/github/tubbo/blue_velvet/master/frames)
+- [RubyGems page](https://rubygems.org/gems/blue_velvet)
