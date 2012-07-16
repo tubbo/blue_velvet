@@ -1,1 +1,1 @@
-script: 'rake configure test'
+script: 'rake build'
