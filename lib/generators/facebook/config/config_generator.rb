@@ -1,6 +1,6 @@
 module Facebook
   # Generate configuration for BlueVelvet and Koala.
-  class ConfigGenerator < Rails::Generators::NamedBase
+  class ConfigGenerator < Rails::Generators::Base
     desc "Copies Facebook/Koala configuration to your application"
     source_root File.expand_path('../templates', __FILE__)
 
