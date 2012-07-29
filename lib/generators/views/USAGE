@@ -1,0 +1,12 @@
+Description:
+    Copies internal gem views for use in the main app. Any view files
+    encountered in the app in the same location as those in the engine
+    will override the default views, so this generator allows you to
+    customize the display of your Facebook content.
+
+Example:
+    rails generate facebook:views
+
+    This will create:
+        app/views/facebook/page/_attribute_not_found.html.haml
+        app/views/facebook/page/_page_attribute.html.haml

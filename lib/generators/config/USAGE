@@ -1,0 +1,15 @@
+Description:
+    Creates YAML configuration in +config/facebook.yml+ which helps you
+    connect to the Facebook platform. Required inherently by Koala, which
+    forms the backend of this gem. Also creates a file in
+    +config/initializers+ that helps set up Koala with this
+    configuration. You may optionally use this file to pass
+    configuration to Koala directly, as it conforms to most people's
+    conventional use of the gem.
+
+Example:
+    rails generate facebook:config
+
+    This will create:
+        config/facebook.yml
+        config/initializers/koala.rb
