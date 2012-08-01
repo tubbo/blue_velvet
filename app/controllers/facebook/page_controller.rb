@@ -30,7 +30,7 @@ class Facebook::PageController < ApplicationController
       attribute = Facebook::Attribute.new \
         name: attribute_name.parameterize,
         title: attribute_name.titleize,
-        body: attribute_content
+        body: attribute_content.html_safe
       render partial: 'page_attribute', locals: { attribute: attribute }
     else
       render partial: 'attribute_not_found', locals: { attribute_name: "#{attribute_name}" }
