@@ -2,7 +2,9 @@ require 'koala'
 
 module Facebook
   def self.config
-    if Rails.env.staging?
+    if ENV['FB_APP_ID'].present? and
+       ENV['FB_SECRET_KEY'].present? and
+       ENV['FB_PAGE_ID'].present?
       ActiveSupport::HashWithIndifferentAccess.new \
         app_id: ENV['FB_APP_ID'],
         secret_key: ENV['FB_SECRET_KEY'],
