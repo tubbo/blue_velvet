@@ -1,3 +1,4 @@
+language: ruby
 secure:
   - "B9J2uBgbwgFs8tlFfKzovglSMyTED1NypgxbzqMepfeXSlV4Uq4J5bpL8+ac\ng2Q/doL6cv5cIX0dkM4yyEeRJjINArkuwfU930hle98Nuq0Bic+jjbZpPB6L\nZoo1ZljcDahqimKCP2zDsVYMp4tkA248C7ViLKoP5QMpn7BXiUA="
   - "Bh+fn0wl+LPeK6nwABQXNKh6maEzH05y2hi+d2XZAt+HybqtdCgoOjLPayBf\ndJWk6zIjcM1koPsfS2fFtXJLVZiAd/86fLhnB9uxgmA0fd4cDDt3vbIsjQkH\nDVdbWwfO0gTRyepbHNdvdmjh8bWxOGIMkQAD0vgF5EWmTEL+C8o="
