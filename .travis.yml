@@ -1,1 +1,6 @@
-script: 'rake configuration db:migrate test'
+secure:
+  - "B9J2uBgbwgFs8tlFfKzovglSMyTED1NypgxbzqMepfeXSlV4Uq4J5bpL8+ac\ng2Q/doL6cv5cIX0dkM4yyEeRJjINArkuwfU930hle98Nuq0Bic+jjbZpPB6L\nZoo1ZljcDahqimKCP2zDsVYMp4tkA248C7ViLKoP5QMpn7BXiUA="
+  - "Bh+fn0wl+LPeK6nwABQXNKh6maEzH05y2hi+d2XZAt+HybqtdCgoOjLPayBf\ndJWk6zIjcM1koPsfS2fFtXJLVZiAd/86fLhnB9uxgmA0fd4cDDt3vbIsjQkH\nDVdbWwfO0gTRyepbHNdvdmjh8bWxOGIMkQAD0vgF5EWmTEL+C8o="
+  - "DN9GqtJQlx1IQv0ms3Md/07Uh1IJP0ct4EKUAB6Qyhm18iW+HtTp9LbiPQ4o\no3jR5w6sKqbmctKYYM7LiTBI7qQWwReE04vFDJO2+NQLRa9RcsVDYEt0UPS1\nuvyb0VyDXSjmS14kg8w8eQfv9mV310lfmbLIgmgDn8hcN2PFl5c="
+before_script: 'bundle exec rake configuration db:setup'
+script: 'bundle exec rake test'
