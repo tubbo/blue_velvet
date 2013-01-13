@@ -29,4 +29,5 @@ group :test do
   gem 'guard-jasmine', require: false
   gem 'guard-minitest', require: false
   gem 'rb-fsevent', require: false
+  gem 'sqlite3'
 end
