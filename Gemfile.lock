@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    blue_velvet (1.0.4)
+    blue_velvet (1.0.5)
       koala
       rails (~> 4.0)
 
