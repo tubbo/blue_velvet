@@ -18,5 +18,13 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails"
   s.add_dependency "koala"
+
   s.add_development_dependency "sqlite3"
+  s.add_development_dependency 'vcr'
+  s.add_development_dependency 'webmock'
+  s.add_development_dependency 'turn', '>= 0.9.3'
+  s.add_development_dependency 'minitest'
+  s.add_development_dependency 'mini_specunit'
+  s.add_development_dependency 'mini_shoulda'
+  s.add_development_dependency 'factory_girl_rails'
 end
